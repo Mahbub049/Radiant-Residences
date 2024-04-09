@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
+import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
     return (
@@ -40,12 +41,20 @@ const Login = () => {
                                     <button className="btn bg-[#FF5A3D] text-lg text-white">Login</button>
                                 </div>
                             </form>
-                            <div className='mx-8 mb-8 flex justify-center'>
-                                <button className="btn text-lg">
-                                    <FcGoogle></FcGoogle>
-                                    Login with Google
-                                </button>
-                            </div>
+                           <div className='flex gap-4 mx-auto'>
+                                <div className='mx-8 mb-8 flex justify-center'>
+                                    <button className="btn text-lg">
+                                        <FcGoogle></FcGoogle>
+                                        Login with Google
+                                    </button>
+                                </div>
+                                <div className='mx-8 mb-8 flex justify-center'>
+                                    <button className="btn text-lg">
+                                        <FaGithub></FaGithub>
+                                        Login with Github
+                                    </button>
+                                </div>
+                           </div>
                             <div className='mx-8 mb-8 flex justify-center'>
                                 <p>Don&apos;t have an account? <Link className='link-primary' to={'/register'}>Register Now</Link></p>
                             </div>
