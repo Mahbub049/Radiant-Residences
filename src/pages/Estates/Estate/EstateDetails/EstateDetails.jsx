@@ -4,6 +4,7 @@ import { IoBedOutline, IoLocationSharp } from "react-icons/io5";
 import { LuBath } from "react-icons/lu";
 import { FiSquare } from "react-icons/fi";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Footer from "../../../Footer/Footer";
 
 const EstateDetails = () => {
     const estates = useLoaderData();
@@ -18,7 +19,7 @@ const EstateDetails = () => {
             </Helmet>
         <div className="container mx-auto">
             <Navbar></Navbar>
-            <div className="my-16 flex items-center gap-10">
+            <div className="mt-16 flex items-center gap-10">
                 <div className=" relative">
                     <div className={`absolute left-3 top-3 ${status === 'rent' ? 'bg-[#389b2f]' : 'bg-[#FF5A3D]'} px-2 py-1 text-white uppercase`}>For {status}</div>
                     <img className="w-[2500px] h-[600px] flex-1 rounded-lg" src={image} alt="" />
@@ -58,6 +59,7 @@ const EstateDetails = () => {
                     </div>
                 </div>
             </div>
+        <Footer></Footer>
         </div>
         </HelmetProvider>
     );

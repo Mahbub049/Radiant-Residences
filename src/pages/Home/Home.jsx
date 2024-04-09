@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import Estates from "../Estates/Estates";
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -13,6 +14,7 @@ const Home = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <Estates></Estates>
+            <Footer></Footer>
             </div>
         </HelmetProvider>
     );
