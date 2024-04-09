@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from '../../providers/AuthProvider';
+import { useForm } from 'react-hook-form';
 
 const Login = () => {
+    const {login} = useContext(AuthContext);
+    const {register, handleSubmit, formState: { errors }} = useForm();
+    const onSubmit = (data) => {
+        const email = data.email;
+        const password = data.password;
+        console.log(email, password)
+        login(email, password)
+        .then(()=>{
+            toast.success("Successful");
+        })
+        .catch(error=>{
+            toast.error("Please Try Again");
+        })
+    }
     return (
         <HelmetProvider>
             <Helmet>
                 <title>Login || Radiant Residences</title>
             </Helmet>
+            <ToastContainer />
             <div className='container mx-auto'>
             <Navbar></Navbar>
             <div>
@@ -21,18 +40,20 @@ const Login = () => {
                             <h1 className="text-5xl font-bold mb-6">Login now!</h1>
                         </div>
                         <div className="card shrink-0 w-full shadow-2xl bg-base-100">
-                            <form className="card-body w-full">
+                            <form onSubmit={handleSubmit(onSubmit)} className="card-body w-full">
                                 <div className="form-control mb-3">
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" placeholder="email" className="input input-bordered" required />
+                                    <input type="email" {...register("email", { required: true })} placeholder="email" className="input input-bordered"/>
+                                    {errors.email && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" placeholder="password" className="input input-bordered" required />
+                                    <input type="password" {...register("password", { required: true })} placeholder="password" className="input input-bordered" />
+                                    {errors.password && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                     </label>

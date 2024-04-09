@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
     const {register, handleSubmit, formState: { errors }} = useForm();
     const {createUser} = useContext(AuthContext);
+    const navigate = useNavigate();
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     const onSubmit = (data) => {
         const email = data.email;
@@ -20,7 +21,6 @@ const Register = () => {
             createUser(email, password)
             .then((result)=>{
                 toast.success("Successful");
-                console.log(result.user)
             })
             .catch(error=>{
                 toast.error("Something wrong happended!");
