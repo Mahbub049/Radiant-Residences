@@ -26,17 +26,22 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-            <div className="dropdown dropdown-end">
-                <div className="tooltip" data-tip="hello">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                {/* <>
+                    <div className="dropdown dropdown-end">
+                        <div className="tooltip" data-tip="hello">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <button className="btn text-white ml-4 bg-[#FF5A3D]">Log Out</button>
+                </> */}
+                <div>
+                    <Link to={'/login'} className="btn text-white ml-4 bg-[#FF5A3D]">Log In</Link>
                 </div>
             </div>
-            <button className="btn text-white ml-4 bg-[#FF5A3D]">Log Out</button>
             </div>
     );
 };
