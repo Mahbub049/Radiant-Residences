@@ -1,14 +1,20 @@
 import Banner from "../Banner/Banner";
 import Estates from "../Estates/Estates";
 import Navbar from "../Navbar/Navbar";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Home = () => {
     return (
-        <div className="container mx-auto">
+        <HelmetProvider>
+            <Helmet>
+                <title>Home || Radiant Residences</title>
+            </Helmet>
+            <div className="container mx-auto">
             <Navbar></Navbar>
             <Banner></Banner>
             <Estates></Estates>
-        </div>
+            </div>
+        </HelmetProvider>
     );
 };
 

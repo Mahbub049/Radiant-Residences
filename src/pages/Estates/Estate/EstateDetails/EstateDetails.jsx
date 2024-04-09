@@ -3,6 +3,7 @@ import Navbar from "../../../Navbar/Navbar";
 import { IoBedOutline, IoLocationSharp } from "react-icons/io5";
 import { LuBath } from "react-icons/lu";
 import { FiSquare } from "react-icons/fi";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const EstateDetails = () => {
     const estates = useLoaderData();
@@ -11,6 +12,10 @@ const EstateDetails = () => {
     const estate = estates.find(estateId=>estateId.id === idInt);
     const {image, estate_title, location, description, price, facilities, house, area, status} = estate;
     return (
+        <HelmetProvider>
+            <Helmet>
+                <title>Estate Details: {id} || Radiant Residences</title>
+            </Helmet>
         <div className="container mx-auto">
             <Navbar></Navbar>
             <div className="my-16 flex items-center gap-10">
@@ -54,6 +59,7 @@ const EstateDetails = () => {
                 </div>
             </div>
         </div>
+        </HelmetProvider>
     );
 };
 
