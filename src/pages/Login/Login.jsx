@@ -28,12 +28,12 @@ const Login = () => {
     const googleUserLogin = () =>{
         googleLogin()
         .then(()=>{toast.success("Successful");})
-        .catch((error)=>{})
+        .catch((error)=>{toast.error("Please Try Again");})
     }
     const githubUserLogin = () =>{
         githubLogin()
         .then(()=>{toast.success("Successful");})
-        .catch((error)=>{})
+        .catch((error)=>{toast.error("Please Try Again");})
     }
     return (
         <HelmetProvider>
