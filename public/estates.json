@@ -1,120 +1,146 @@
 [
-    {
-      "id": 1,
-      "image": "https://i.ibb.co/MhVb6wR/1.jpg",
-      "estate_title": "Luxury Beachfront Resort",
-      "segment_name": "Resort",
-      "description": "Experience unparalleled luxury and relaxation at our beachfront resort.",
-      "price": "$500 per night",
-      "status": "rent",
-      "area": "5000 sq ft",
-      "location": "Beachfront",
-      "facilities": ["Swimming Pool", "Spa", "Fine Dining"],
-      "view_property_button_text": "View Resort"
-    },
-    {
-      "id": 2,
-      "image": "https://i.ibb.co/xhn3GsZ/2.jpg",
-      "estate_title": "Charming Boutique Hotel",
-      "segment_name": "Hotel",
-      "description": "Discover charm and elegance at our boutique hotel located in the heart of the city.",
-      "price": "$200 per night",
-      "status": "rent",
-      "area": "3000 sq ft",
-      "location": "City Center",
-      "facilities": ["Fitness Center", "Restaurant", "Meeting Rooms"],
-      "view_property_button_text": "View Hotel"
-    },
-    {
-      "id": 3,
-      "image": "https://i.ibb.co/sb5nNtB/3.jpg",
-      "estate_title": "Cozy Vacation Rental",
-      "segment_name": "Vacation Rental",
-      "description": "Escape to paradise at our cozy vacation rental with breathtaking ocean views.",
-      "price": "$300,000",
-      "status": "sale",
-      "area": "2000 sq ft",
-      "location": "Beachfront",
-      "facilities": ["Private Beach Access", "Outdoor Grill", "Wi-Fi"],
-      "view_property_button_text": "View Vacation Rental"
-    },
-    {
-      "id": 4,
-      "image": "https://i.ibb.co/kJC7Q9x/4.jpg",
-      "estate_title": "Rustic Mountain Lodge",
-      "segment_name": "Lodge",
-      "description": "Unwind in nature at our rustic mountain lodge surrounded by scenic beauty.",
-      "price": "$400 per night",
-      "status": "rent",
-      "area": "3500 sq ft",
-      "location": "Mountain",
-      "facilities": ["Fireplace", "Hiking Trails", "Game Room"],
-      "view_property_button_text": "View Lodge"
-    },
-    {
-      "id": 5,
-      "image": "https://i.ibb.co/7br8y0B/5.jpg",
-      "estate_title": "Seaside Guesthouse",
-      "segment_name": "Guesthouse",
-      "description": "Relax by the sea in our cozy guesthouse with stunning ocean views.",
-      "price": "$150 per night",
-      "status": "rent",
-      "area": "1800 sq ft",
-      "location": "Seaside",
-      "facilities": ["Ocean View Terrace", "Kitchenette", "Free Wi-Fi"],
-      "view_property_button_text": "View Guesthouse"
-    },
-    {
-      "id": 6,
-      "image": "https://i.ibb.co/gyYxtgj/6.jpg",
-      "estate_title": "Chic Urban Loft",
-      "segment_name": "Apartment",
-      "description": "Live in style at our chic urban loft with modern amenities and city views.",
-      "price": "$300 per night",
-      "status": "rent",
-      "area": "1200 sq ft",
-      "location": "Downtown",
-      "facilities": ["Open Floor Plan", "Balcony", "Fitness Center Access"],
-      "view_property_button_text": "View Loft"
-    },
-    {
-      "id": 7,
-      "image": "https://i.ibb.co/zPH5Pf8/7.jpg",
-      "estate_title": "Coastal Villa Retreat",
-      "segment_name": "Villa",
-      "description": "Escape to a coastal paradise at our luxurious villa retreat with panoramic ocean views.",
-      "price": "$1,500,000",
-      "status": "sale",
-      "area": "6000 sq ft",
-      "location": "Coastline",
-      "facilities": ["Infinity Pool", "Outdoor Kitchen", "Cinema Room"],
-      "view_property_button_text": "View Villa"
-    },
-    {
-      "id": 8,
-      "image": "https://i.ibb.co/3mKntxS/8.jpg",
-      "estate_title": "Historic Bed and Breakfast",
-      "segment_name": "Bed and Breakfast",
-      "description": "Experience historic charm and comfort at our bed and breakfast located in a quaint town.",
-      "price": "$120 per night",
-      "status": "rent",
-      "area": "2000 sq ft",
-      "location": "Historic District",
-      "facilities": ["Antique Furnishings", "Homemade Breakfast", "Garden Courtyard"],
-      "view_property_button_text": "View B&B"
-    },
-    {
-      "id": 9,
-      "image": "https://i.ibb.co/2yCZNjP/9.jpg",
-      "estate_title": "Ski Chalet Retreat",
-      "segment_name": "Chalet",
-      "description": "Enjoy the ultimate winter getaway at our cozy ski chalet retreat nestled in the mountains.",
-      "price": "$400,000",
-      "status": "sale",
-      "area": "2500 sq ft",
-      "location": "Mountain Resort",
-      "facilities": ["Ski-In/Ski-Out Access", "Hot Tub", "Fireplace Lounge"],
-      "view_property_button_text": "View Chalet"
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/MhVb6wR/1.jpg",
+    "estate_title": "Luxury Beachfront Resort",
+    "segment_name": "Resort",
+    "description": "Experience unparalleled luxury and relaxation at our beachfront resort. Indulge in breathtaking ocean views and world-class amenities designed to pamper you throughout your stay.",
+    "price": "$15,000/Month",
+    "status": "rent",
+    "area": "5000 sq ft",
+    "location": "Beachfront",
+    "facilities": ["Swimming Pool", "Spa", "Fine Dining"],
+    "house": {
+      "bedrooms": 5,
+      "bathrooms": 7
     }
-  ]
-  
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/xhn3GsZ/2.jpg",
+    "estate_title": "Charming Boutique Hotel",
+    "segment_name": "Hotel",
+    "description": "Discover charm and elegance at our boutique hotel located in the heart of the city. Immerse yourself in the vibrant culture and rich history of the surrounding area while enjoying unparalleled comfort and hospitality.",
+    "price": "$6000/Month",
+    "status": "rent",
+    "area": "3000 sq ft",
+    "location": "City Center",
+    "facilities": ["Fitness Center", "Restaurant", "Meeting Rooms"],
+    "house": {
+      "bedrooms": 10,
+      "bathrooms": 12
+    }
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/sb5nNtB/3.jpg",
+    "estate_title": "Cozy Vacation Rental",
+    "segment_name": "Vacation Rental",
+    "description": "Escape to paradise at our cozy vacation rental with breathtaking ocean views. Relax and unwind in the serene beauty of your surroundings, where every moment is filled with tranquility and peace.",
+    "price": "$300,000",
+    "status": "sale",
+    "area": "2000 sq ft",
+    "location": "Beachfront",
+    "facilities": ["Private Beach Access", "Outdoor Grill", "Wi-Fi"],
+    "house": {
+      "bedrooms": 3,
+      "bathrooms": 2
+    }
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/kJC7Q9x/4.jpg",
+    "estate_title": "Rustic Mountain Lodge",
+    "segment_name": "Lodge",
+    "description": "Unwind in nature at our rustic mountain lodge surrounded by scenic beauty. Immerse yourself in the great outdoors while enjoying modern comforts and amenities designed for relaxation and rejuvenation.",
+    "price": "$12,000/Month",
+    "status": "rent",
+    "area": "3500 sq ft",
+    "location": "Mountain",
+    "facilities": ["Fireplace", "Hiking Trails", "Game Room"],
+    "house": {
+      "bedrooms": 7,
+      "bathrooms": 5
+    }
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/7br8y0B/5.jpg",
+    "estate_title": "Seaside Guesthouse",
+    "segment_name": "Guesthouse",
+    "description": "Relax by the sea in our cozy guesthouse with stunning ocean views. Experience the tranquility of coastal living and the warmth of our hospitality, where every day is a new adventure waiting to be discovered.",
+    "price": "$4500/Month",
+    "status": "rent",
+    "area": "1800 sq ft",
+    "location": "Seaside",
+    "facilities": ["Ocean View Terrace", "Kitchenette", "Free Wi-Fi"],
+    "house": {
+      "bedrooms": 4,
+      "bathrooms": 3
+    }
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/gyYxtgj/6.jpg",
+    "estate_title": "Chic Urban Loft",
+    "segment_name": "Apartment",
+    "description": "Live in style at our chic urban loft with modern amenities and city views. Embrace the energy of the city while enjoying the comfort and convenience of contemporary living in a vibrant urban setting.",
+    "price": "$9000/Month",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Downtown",
+    "facilities": ["Open Floor Plan", "Balcony", "Fitness Center Access"],
+    "house": {
+      "bedrooms": 2,
+      "bathrooms": 2
+    }
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/zPH5Pf8/7.jpg",
+    "estate_title": "Coastal Villa Retreat",
+    "segment_name": "Villa",
+    "description": "Escape to a coastal paradise at our luxurious villa retreat with panoramic ocean views. Experience the epitome of luxury living amidst the beauty of nature, where every moment is an unforgettable experience.",
+    "price": "$1,500,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Coastline",
+    "facilities": ["Infinity Pool", "Outdoor Kitchen", "Cinema Room"],
+    "house": {
+      "bedrooms": 6,
+      "bathrooms": 8
+    }
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/3mKntxS/8.jpg",
+    "estate_title": "Historic Bed and Breakfast",
+    "segment_name": "Bed and Breakfast",
+    "description": "Experience historic charm and comfort at our bed and breakfast located in a quaint town. Step back in time and immerse yourself in the rich heritage and culture of our charming locale, where every corner tells a story of bygone eras.",
+    "price": "$3600/Month",
+    "status": "rent",
+    "area": "2000 sq ft",
+    "location": "Historic District",
+    "facilities": ["Antique Furnishings", "Homemade Breakfast", "Garden Courtyard"],
+    "house": {
+      "bedrooms": 6,
+      "bathrooms": 4
+    }
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/2yCZNjP/9.jpg",
+    "estate_title": "Ski Chalet Retreat",
+    "segment_name": "Chalet",
+    "description": "Enjoy the ultimate winter getaway at our cozy ski chalet retreat nestled in the mountains. Experience the thrill of skiing right from your doorstep, then return to the warmth and comfort of our chalet for a cozy evening by the fire.",
+    "price": "$400,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Mountain Resort",
+    "facilities": ["Ski-In/Ski-Out Access", "Hot Tub", "Fireplace Lounge"],
+    "house": {
+      "bedrooms": 3,
+      "bathrooms": 2
+    }
+  }
+]  

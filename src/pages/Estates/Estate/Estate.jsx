@@ -1,6 +1,9 @@
 import { IoLocationSharp } from "react-icons/io5";
+import { FiSquare } from "react-icons/fi";
+import { IoBedOutline } from "react-icons/io5";
+import { LuBath } from "react-icons/lu";
 const Estate = ({estate}) => {
-    const {estate_title, status, image, location} = estate;
+    const {estate_title, status, image, location, price, description, area, house} = estate;
     return (
         <div className="card bg-base-100 shadow-xl transform hover:scale-105 transition-transform duration-300 relative">
             <figure><img className="w-full h-[280px]" src={image} alt="Shoes" /></figure>
@@ -10,10 +13,27 @@ const Estate = ({estate}) => {
                 <p>{location}</p>
             </div>
             <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+                <h2 className="card-title text-[#FF5A3D]">{price}</h2>
+                <h2 className="text-xl font-bold">{estate_title}</h2>
+                {description.length>100 ? <p>{description.slice(0,100)}...</p> : <p>{description}</p>}
+                <hr className="mt-4" />
+                <div className="flex gap-7">
+                    <div className="flex gap-2 items-center my-3">
+                        <FiSquare className="text-lg" />
+                        <p>{area}</p>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <IoBedOutline className="text-xl"></IoBedOutline>
+                        <p>{house.bedrooms} Bedrooms</p>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <LuBath className="text-xl"></LuBath>
+                        <p>{house.bathrooms} Bathrooms</p>
+                    </div>
+                </div>
+                <hr />
+                <div className="card-actions justify-end my-6">
+                    <button className="btn bg-[#FF5A3D] text-white w-full">View Details</button>
                 </div>
             </div>
         </div>
