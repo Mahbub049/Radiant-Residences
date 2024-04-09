@@ -5,7 +5,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
-    const navigate = useNavigate();
+    
     const signOutUser = () => {
         logOut()
         .then(()=>{})
@@ -15,7 +15,9 @@ const Navbar = () => {
     const lists = 
     <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'update'}>Update Profile</NavLink></li>
+        {user &&
+            <li><NavLink to={'profileUpdate'}>Update Profile</NavLink></li>
+        }
     </>
     return (
         <div className="navbar bg-base-100 mt-6">
