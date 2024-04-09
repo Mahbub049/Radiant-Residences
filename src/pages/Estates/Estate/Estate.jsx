@@ -2,8 +2,9 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FiSquare } from "react-icons/fi";
 import { IoBedOutline } from "react-icons/io5";
 import { LuBath } from "react-icons/lu";
+import { Link } from "react-router-dom";
 const Estate = ({estate}) => {
-    const {estate_title, status, image, location, price, description, area, house} = estate;
+    const {id, estate_title, status, image, location, price, description, area, house} = estate;
     return (
         <div className="card bg-base-100 shadow-xl transform hover:scale-105 transition-transform duration-300 relative">
             <figure><img className="w-full h-[280px]" src={image} alt="Shoes" /></figure>
@@ -33,7 +34,7 @@ const Estate = ({estate}) => {
                 </div>
                 <hr />
                 <div className="card-actions justify-end my-6">
-                    <button className="btn bg-[#FF5A3D] text-white w-full">View Details</button>
+                    <Link to={`estate/${id}`} className="btn bg-[#FF5A3D] text-white w-full">View Details</Link>
                 </div>
             </div>
         </div>
