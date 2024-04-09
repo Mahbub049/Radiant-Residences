@@ -11,7 +11,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import { useForm } from 'react-hook-form';
 
 const Login = () => {
-    const {login} = useContext(AuthContext);
+    const {login,googleLogin,githubLogin} = useContext(AuthContext);
     const {register, handleSubmit, formState: { errors }} = useForm();
     const onSubmit = (data) => {
         const email = data.email;
@@ -24,6 +24,16 @@ const Login = () => {
         .catch(error=>{
             toast.error("Please Try Again");
         })
+    }
+    const googleUserLogin = () =>{
+        googleLogin()
+        .then(()=>{toast.success("Successful");})
+        .catch((error)=>{})
+    }
+    const githubUserLogin = () =>{
+        githubLogin()
+        .then(()=>{toast.success("Successful");})
+        .catch((error)=>{})
     }
     return (
         <HelmetProvider>
@@ -64,13 +74,13 @@ const Login = () => {
                             </form>
                            <div className='flex gap-4 mx-auto'>
                                 <div className='mx-8 mb-8 flex justify-center'>
-                                    <button className="btn text-lg">
+                                    <button onClick={googleUserLogin} className="btn text-lg">
                                         <FcGoogle></FcGoogle>
                                         Login with Google
                                     </button>
                                 </div>
                                 <div className='mx-8 mb-8 flex justify-center'>
-                                    <button className="btn text-lg">
+                                    <button onClick={githubUserLogin} className="btn text-lg">
                                         <FaGithub></FaGithub>
                                         Login with Github
                                     </button>
