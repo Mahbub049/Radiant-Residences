@@ -4,12 +4,15 @@ import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useForm } from "react-hook-form";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaRegEye, FaRegEyeSlash  } from "react-icons/fa6";
+
 
 const Register = () => {
+    const [passwordState, setPasswordState] = useState(false);
     const {register, handleSubmit, formState: { errors }} = useForm();
     const {createUser} = useContext(AuthContext);
     const navigate = useNavigate();
@@ -67,17 +70,21 @@ const Register = () => {
                                     <input type="email" placeholder="email" className="input input-bordered" {...register("email", { required: true })}/>
                                     {errors.email && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                 </div>
-                                <div className="form-control">
+                                <div className="form-control relative">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" placeholder="password" className="input input-bordered" {...register("password", { required: true })}/>
+                                    <input type={passwordState ? 'text' : 'password'} placeholder="password" className="input input-bordered" {...register("password", { required: true })}/>
+                                    <div onClick={()=>setPasswordState(!passwordState)} className="absolute right-5 top-[50px]">
+                                        {
+                                            passwordState ? <FaRegEye className="text-xl"/> : <FaRegEyeSlash className="text-xl" />
+                                        }
+                                    </div>
                                     {errors.password && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                     </label>
                                 </div>
-                                {/* {errors.email && toast('error')} */}
                                 <div className="form-control mt-6">
                                     <button className="btn bg-[#FF5A3D] text-lg text-white">Register</button>
                                 </div>

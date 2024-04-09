@@ -3,16 +3,19 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { FcGoogle } from "react-icons/fc";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../providers/AuthProvider';
 import { useForm } from 'react-hook-form';
+import { useLocation } from 'react-router-dom';
 
 const Login = () => {
     const {login,googleLogin,githubLogin} = useContext(AuthContext);
     const {register, handleSubmit, formState: { errors }} = useForm();
+    const navigate = useNavigate();
+    const location = useLocation();
     const onSubmit = (data) => {
         const email = data.email;
         const password = data.password;
@@ -20,6 +23,7 @@ const Login = () => {
         login(email, password)
         .then(()=>{
             toast.success("Successful");
+            navigate(location?.state ? location.state : '/')
         })
         .catch(error=>{
             toast.error("Please Try Again");
@@ -27,12 +31,12 @@ const Login = () => {
     }
     const googleUserLogin = () =>{
         googleLogin()
-        .then(()=>{toast.success("Successful");})
+        .then(()=>{navigate(location?.state ? location.state : '/')})
         .catch((error)=>{toast.error("Please Try Again");})
     }
     const githubUserLogin = () =>{
         githubLogin()
-        .then(()=>{toast.success("Successful");})
+        .then(()=>{navigate(location?.state ? location.state : '/');})
         .catch((error)=>{toast.error("Please Try Again");})
     }
     return (

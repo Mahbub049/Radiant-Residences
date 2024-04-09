@@ -1,15 +1,17 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import './Navbar.css'
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-
+import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
+    const navigate = useNavigate();
     const signOutUser = () => {
         logOut()
         .then(()=>{})
         .catch(()=>{})
     }
+    console.log(user)
     const lists = 
     <>
         <li><NavLink to={'/'}>Home</NavLink></li>
@@ -36,10 +38,10 @@ const Navbar = () => {
             <div className="navbar-end">
                 {user ? <>
                     <div className="dropdown dropdown-end">
-                        <div className="tooltip" data-tip="hello">
+                        <div className="tooltip" data-tip={user.displayName}>
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    <img referrerpolicy="no-referrer" alt="Tailwind CSS Navbar component" src={user.photoURL? user.photoURL : <FaRegUserCircle />} />
                                 </div>
                             </div>
                         </div>
