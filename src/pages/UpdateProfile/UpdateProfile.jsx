@@ -23,10 +23,10 @@ const UpdateProfile = () => {
                         displayName: name,
                         photoURL: photoURL
                     })
-                    toast.success("Successful");
+                    toast.success("Successfully Updated!");
                 })
                 .catch(()=>{   
-                    toast.error("Something wrong happended!");
+                    toast.error("Something went wrong!");
                 })
     }
     return (
@@ -59,6 +59,13 @@ const UpdateProfile = () => {
                                         </label>
                                         <input type="photourl" placeholder="Photo URL" value={newImage} className="input input-bordered" {...register("photoURL", { required: true })} onChange={(e) => setNewImage(e.target.value)}/>
                                         {errors.photoURL && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
+                                    </div>
+                                    <div className="form-control mb-3">
+                                        <label className="label">
+                                            <span className="label-text">Email</span>
+                                        </label>
+                                        <input type="email" placeholder="email" value={user.email} className="input input-bordered" {...register("email", { required: true })}/>
+                                        {errors.email && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                     </div>
                                     <div className="form-control mt-6">
                                         <button className="btn bg-[#FF5A3D] text-lg text-white">Update</button>

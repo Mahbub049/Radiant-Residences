@@ -26,18 +26,18 @@ const Login = () => {
             navigate(location?.state ? location.state : '/')
         })
         .catch(error=>{
-            toast.error("Please Try Again");
+            toast.error("Your email or password didn't matched!");
         })
     }
     const googleUserLogin = () =>{
         googleLogin()
         .then(()=>{navigate(location?.state ? location.state : '/')})
-        .catch((error)=>{toast.error("Please Try Again");})
+        .catch((error)=>{toast.error("Please Try Again!");})
     }
     const githubUserLogin = () =>{
         githubLogin()
         .then(()=>{navigate(location?.state ? location.state : '/');})
-        .catch((error)=>{toast.error("Please Try Again");})
+        .catch((error)=>{toast.error("Please Try Again!");})
     }
     return (
         <HelmetProvider>
@@ -59,14 +59,14 @@ const Login = () => {
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" {...register("email", { required: true })} placeholder="email" className="input input-bordered"/>
+                                    <input type="email" {...register("email", { required: true })} placeholder="Email" className="input input-bordered"/>
                                     {errors.email && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" {...register("password", { required: true })} placeholder="password" className="input input-bordered" />
+                                    <input type="password" {...register("password", { required: true })} placeholder="Password" className="input input-bordered" />
                                     {errors.password && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
@@ -91,7 +91,7 @@ const Login = () => {
                                 </div>
                            </div>
                             <div className='mx-8 mb-8 flex justify-center'>
-                                <p>Don&apos;t have an account? <Link className='link-primary' to={'/register'}>Register Now</Link></p>
+                                <p>Don&apos;t have an account? <Link className='text-[#FF5A3D]' to={'/register'}>Register Now</Link></p>
                             </div>
                         </div>
                     </div>

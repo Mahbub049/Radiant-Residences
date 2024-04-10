@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -15,7 +15,7 @@ const Register = () => {
     const [passwordState, setPasswordState] = useState(false);
     const {register, handleSubmit, formState: { errors }} = useForm();
     const {createUser, updateUserInfo, setUser} = useContext(AuthContext);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     const onSubmit = (data) => {
         const email = data.email;
@@ -24,22 +24,22 @@ const Register = () => {
         const photoURL = data.photoURL;
         if(passwordRegex.test(password)){
             createUser(email, password)
-            .then((result)=>{
+            .then(()=>{
                 updateUserInfo(name, photoURL)
                 .then(()=>{
                     setUser({
                         displayName: name,
                         photoURL: photoURL
                     })
-                    navigate(location?.state ? location.state : '/')
-                    toast.success("Successful");
+                    // navigate(location?.state ? location.state : '/')
+                    toast.success("Successfully Registered!");
                 })
                 .catch(()=>{   
-                    toast.error("Something wrong happended!");
+                    toast.error("Something went wrong!");
                 })
             })
-            .catch(error=>{
-                toast.error("Something wrong happended!");
+            .catch(()=>{
+                toast.error("This email already exists!");
             })
         }
         else{
@@ -103,7 +103,7 @@ const Register = () => {
                                 </div>
                             </form>
                             <div className='mx-8 mb-8 flex justify-center'>
-                                <p>Already have an account? <Link className="link-primary" to={'/login'}>Login Now</Link></p>
+                                <p>Already have an account? <Link className="text-[#FF5A3D]" to={'/login'}>Login Now</Link></p>
                             </div>
                         </div>
                     </div>
