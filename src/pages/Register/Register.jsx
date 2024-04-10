@@ -14,16 +14,24 @@ import { FaRegEye, FaRegEyeSlash  } from "react-icons/fa6";
 const Register = () => {
     const [passwordState, setPasswordState] = useState(false);
     const {register, handleSubmit, formState: { errors }} = useForm();
-    const {createUser} = useContext(AuthContext);
+    const {createUser, updateUserInfo} = useContext(AuthContext);
     const navigate = useNavigate();
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     const onSubmit = (data) => {
         const email = data.email;
         const password = data.password;
+        const name = data.name;
+        const photoURL = data.photoURL;
         if(passwordRegex.test(password)){
             createUser(email, password)
             .then((result)=>{
-                toast.success("Successful");
+                updateUserInfo(name, photoURL)
+                .then(()=>{
+                    toast.success("Successful");
+                })
+                .catch(()=>{   
+                    toast.error("Something wrong happended!");
+                })
             })
             .catch(error=>{
                 toast.error("Something wrong happended!");
