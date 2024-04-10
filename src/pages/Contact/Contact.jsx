@@ -6,11 +6,16 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Contact = () => {
     const position = [23.821060, 90.394636]
     return (
-        <div className="container mx-auto">
+        <HelmetProvider>
+            <Helmet>
+                <title>Contact Us || Radiant Residences</title>
+            </Helmet>
+            <div className="container mx-auto">
             <Navbar></Navbar>
             <div className="mt-16">
                 <div className="text-center mb-16">
@@ -60,7 +65,8 @@ const Contact = () => {
                 </div>
             </div>
             <Footer></Footer>
-        </div>
+            </div>
+        </HelmetProvider>
     );
 };
 
