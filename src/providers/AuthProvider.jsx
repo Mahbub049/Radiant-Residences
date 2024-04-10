@@ -16,21 +16,12 @@ const AuthProvider = ({children}) => {
     }
 
     const updateUserInfo = (name, image) => {
-        setLoading(true)
+        setLoading(false)
         return updateProfile(auth.currentUser, 
             {
                 displayName: name, 
                 photoURL: image
             })
-    }
-
-    const updateUserEmail = (email) => {
-        setLoading(true)
-        return updateEmail(auth.currentUser, email)
-    }
-    const updateUserPassword = (password) => {
-        setLoading(true)
-        return updatePassword(auth.currentUser, password)
     }
 
     const login = (email, password) => {
@@ -69,8 +60,7 @@ const AuthProvider = ({children}) => {
         logOut,
         loading,
         updateUserInfo,
-        updateUserEmail,
-        updateUserPassword
+        setUser
 
     }
 

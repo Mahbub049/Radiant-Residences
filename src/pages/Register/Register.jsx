@@ -14,7 +14,7 @@ import { FaRegEye, FaRegEyeSlash  } from "react-icons/fa6";
 const Register = () => {
     const [passwordState, setPasswordState] = useState(false);
     const {register, handleSubmit, formState: { errors }} = useForm();
-    const {createUser, updateUserInfo} = useContext(AuthContext);
+    const {createUser, updateUserInfo, setUser} = useContext(AuthContext);
     const navigate = useNavigate();
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     const onSubmit = (data) => {
@@ -27,6 +27,11 @@ const Register = () => {
             .then((result)=>{
                 updateUserInfo(name, photoURL)
                 .then(()=>{
+                    setUser({
+                        displayName: name,
+                        photoURL: photoURL
+                    })
+                    navigate(location?.state ? location.state : '/')
                     toast.success("Successful");
                 })
                 .catch(()=>{   
