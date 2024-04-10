@@ -44,7 +44,7 @@ const Navbar = () => {
                         <div className="tooltip" data-tip={user.displayName}>
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img referrerpolicy="no-referrer" alt="Tailwind CSS Navbar component" src={user.photoURL? user.photoURL : <FaRegUserCircle />} />
+                                    <img referrerpolicy="no-referrer" alt="User" src={user.photoURL? user.photoURL : <FaRegUserCircle />} />
                                 </div>
                             </div>
                         </div>
