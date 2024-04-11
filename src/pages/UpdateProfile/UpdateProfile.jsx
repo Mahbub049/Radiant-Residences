@@ -64,7 +64,7 @@ const UpdateProfile = () => {
                                         <label className="label">
                                             <span className="label-text">Email</span>
                                         </label>
-                                        <input type="email" placeholder="email" value={user.email} className="input input-bordered" {...register("email", { required: true })}/>
+                                        <input type="email" placeholder="email" value={user.email} className="input input-bordered" {...register("email")}/>
                                         {errors.email && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
                                     </div>
                                     <div className="form-control mt-6">

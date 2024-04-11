@@ -51,7 +51,7 @@ const Login = () => {
                 <div className="hero bg-base-200 mt-16">
                     <div className="hero-content flex-col w-[800px] h-[600px]">
                         <div className="text-center">
-                            <h1 className="text-5xl font-bold mb-6">Login now!</h1>
+                            <h1 className="text-5xl font-bold mb-3">Login now!</h1>
                         </div>
                         <div className="card shrink-0 w-full shadow-2xl bg-base-100">
                             <form onSubmit={handleSubmit(onSubmit)} className="card-body w-full">
@@ -60,7 +60,7 @@ const Login = () => {
                                         <span className="label-text">Email</span>
                                     </label>
                                     <input type="email" {...register("email", { required: true })} placeholder="Email" className="input input-bordered"/>
-                                    {errors.email && <span className="my-2 text-[#FF5A3D]">This field is required</span>}
+                                    {errors.email && <span className="mt-3 text-[#FF5A3D]">This field is required</span>}
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
