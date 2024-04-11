@@ -2,6 +2,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import './Navbar.css'
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { TbBuildingEstate } from "react-icons/tb";
 import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
@@ -32,7 +33,10 @@ const Navbar = () => {
                     {lists}
                 </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost text-3xl font-bold text-[#FF5A3D]">Radiant Residences</Link>
+                <Link to={'/'} className="btn btn-ghost text-3xl font-bold text-[#FF5A3D]">
+                    <TbBuildingEstate></TbBuildingEstate>
+                    Radiant Residences
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

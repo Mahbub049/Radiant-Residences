@@ -21,7 +21,8 @@ const UpdateProfile = () => {
                 .then(()=>{
                     setUser({
                         displayName: name,
-                        photoURL: photoURL
+                        photoURL: photoURL,
+                        email: user.email
                     })
                     toast.success("Successfully Updated!");
                 })
