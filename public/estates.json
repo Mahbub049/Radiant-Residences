@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://i.ibb.co/MhVb6wR/1.jpg",
+    "image": "https://i.ibb.co/Ykb0d94/1.jpg",
     "estate_title": "Luxury Beachfront Resort",
     "segment_name": "Resort",
     "description": "Experience unparalleled luxury and relaxation at our beachfront resort. Indulge in breathtaking ocean views and world-class amenities designed to pamper you throughout your stay.",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "image": "https://i.ibb.co/xhn3GsZ/2.jpg",
+    "image": "https://i.ibb.co/VWY52q6/2.jpg",
     "estate_title": "Charming Boutique Hotel",
     "segment_name": "Hotel",
     "description": "Discover charm and elegance at our boutique hotel located in the heart of the city. Immerse yourself in the vibrant culture and rich history of the surrounding area while enjoying unparalleled comfort and hospitality.",
@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "image": "https://i.ibb.co/sb5nNtB/3.jpg",
+    "image": "https://i.ibb.co/z7t0W7W/3.jpg",
     "estate_title": "Cozy Vacation Rental",
     "segment_name": "Vacation Rental",
     "description": "Escape to paradise at our cozy vacation rental with breathtaking ocean views. Relax and unwind in the serene beauty of your surroundings, where every moment is filled with tranquility and peace.",
@@ -49,7 +49,7 @@
   },
   {
     "id": 4,
-    "image": "https://i.ibb.co/kJC7Q9x/4.jpg",
+    "image": "https://i.ibb.co/N3dpyQ9/4.jpg",
     "estate_title": "Rustic Mountain Lodge",
     "segment_name": "Lodge",
     "description": "Unwind in nature at our rustic mountain lodge surrounded by scenic beauty. Immerse yourself in the great outdoors while enjoying modern comforts and amenities designed for relaxation and rejuvenation.",
@@ -65,7 +65,7 @@
   },
   {
     "id": 5,
-    "image": "https://i.ibb.co/7br8y0B/5.jpg",
+    "image": "https://i.ibb.co/m44xnGN/5.jpg",
     "estate_title": "Seaside Guesthouse",
     "segment_name": "Guesthouse",
     "description": "Relax by the sea in our cozy guesthouse with stunning ocean views. Experience the tranquility of coastal living and the warmth of our hospitality, where every day is a new adventure waiting to be discovered.",
@@ -81,7 +81,7 @@
   },
   {
     "id": 6,
-    "image": "https://i.ibb.co/gyYxtgj/6.jpg",
+    "image": "https://i.ibb.co/Cms6kZG/6.jpg",
     "estate_title": "Chic Urban Loft",
     "segment_name": "Apartment",
     "description": "Live in style at our chic urban loft with modern amenities and city views. Embrace the energy of the city while enjoying the comfort and convenience of contemporary living in a vibrant urban setting.",
@@ -97,7 +97,7 @@
   },
   {
     "id": 7,
-    "image": "https://i.ibb.co/zPH5Pf8/7.jpg",
+    "image": "https://i.ibb.co/NxHmcd7/7.jpg",
     "estate_title": "Coastal Villa Retreat",
     "segment_name": "Villa",
     "description": "Escape to a coastal paradise at our luxurious villa retreat with panoramic ocean views. Experience the epitome of luxury living amidst the beauty of nature, where every moment is an unforgettable experience.",
@@ -113,7 +113,7 @@
   },
   {
     "id": 8,
-    "image": "https://i.ibb.co/3mKntxS/8.jpg",
+    "image": "https://i.ibb.co/CWQsL0p/8.jpg",
     "estate_title": "Historic Bed and Breakfast",
     "segment_name": "Bed and Breakfast",
     "description": "Experience historic charm and comfort at our bed and breakfast located in a quaint town. Step back in time and immerse yourself in the rich heritage and culture of our charming locale, where every corner tells a story of bygone eras.",
@@ -129,7 +129,7 @@
   },
   {
     "id": 9,
-    "image": "https://i.ibb.co/2yCZNjP/9.jpg",
+    "image": "https://i.ibb.co/Mp1Spyn/9.jpg",
     "estate_title": "Ski Chalet Retreat",
     "segment_name": "Chalet",
     "description": "Enjoy the ultimate winter getaway at our cozy ski chalet retreat nestled in the mountains. Experience the thrill of skiing right from your doorstep, then return to the warmth and comfort of our chalet for a cozy evening by the fire.",

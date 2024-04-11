@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "The Rise of Luxury Resorts: Trends and Insights",
+      "author": "Sophia Lee",
+      "date": "2024-04-10",
+      "content": "Explore the latest trends shaping the luxury resort industry and gain insights into what sets these properties apart. From innovative amenities to unparalleled service, discover why luxury resorts are becoming the ultimate destination for discerning travelers.",
+      "image": "https://i.ibb.co/F3LCrxG/1.jpg",
+      "tags": ["Luxury Resorts", "Hospitality", "Travel Trends"],
+      "category": "Luxury",
+      "location": "Tropical Island",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "title": "The Future of Vacation Rentals: Sustainable Practices and Innovations",
+      "author": "Michael Johnson",
+      "date": "2024-04-08",
+      "content": "Discover how vacation rentals are embracing sustainability and implementing innovative practices to minimize their environmental impact. From eco-friendly design to community engagement initiatives, learn how these properties are shaping the future of travel.",
+      "image": "https://i.ibb.co/sjN5q0h/2.jpg",
+      "tags": ["Vacation Rentals", "Sustainability", "Innovation"],
+      "category": "Sustainability",
+      "location": "Mountain Retreat",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "title": "Charming Guesthouses: Hidden Gems of Hospitality",
+      "author": "Emily White",
+      "date": "2024-04-06",
+      "content": "Uncover the allure of charming guesthouses and their unique appeal to travelers seeking authentic experiences. From historic properties to quaint cottages, explore how these hidden gems offer personalized service and a warm sense of hospitality.",
+      "image": "https://i.ibb.co/N2rsT9B/3.jpg",
+      "tags": ["Guesthouses", "Hospitality", "Travel Experiences"],
+      "category": "Authentic Experiences",
+      "location": "Coastal Village",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "title": "Motel Makeover: Revitalizing Retro Accommodations",
+      "author": "David Brown",
+      "date": "2024-04-04",
+      "content": "Witness the resurgence of motels as they undergo stylish makeovers and redefine budget-friendly accommodations. From retro chic decor to modern amenities, see how motels are attracting a new generation of travelers while preserving their nostalgic charm.",
+      "image": "https://i.ibb.co/HXMtDVk/4.jpg",
+      "tags": ["Motels", "Hospitality", "Travel Trends"],
+      "category": "Retro Chic",
+      "location": "City Center",
+      "rating": 4.2
+    },
+    {
+      "id": 5,
+      "title": "Luxe Lodges: Retreats for Nature Enthusiasts",
+      "author": "Olivia Green",
+      "date": "2024-04-02",
+      "content": "Immerse yourself in the beauty of nature at these luxurious lodges, nestled in serene landscapes and offering unparalleled access to outdoor adventures. From cozy cabins to remote wilderness retreats, experience the perfect blend of comfort and adventure.",
+      "image": "https://i.ibb.co/5jKsVZ9/5.jpg",
+      "tags": ["Lodges", "Nature Retreats", "Adventure Travel"],
+      "category": "Nature Escapes",
+      "location": "Forest Reserve",
+      "rating": 4.6
+    }
+  ]
+  
