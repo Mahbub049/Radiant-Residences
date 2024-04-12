@@ -56,8 +56,8 @@ const Register = () => {
             <div className='container mx-auto'>
             <Navbar></Navbar>
             <div>
-                <div className="hero bg-base-200 mt-40 mb-32">
-                    <div className="hero-content flex-col lg:w-[800px] h-[600px]">
+                <div className="hero mt-40 mb-32">
+                    <div className="hero-content flex-col w-[340px] lg:w-[800px] h-[600px]">
                         <div className="text-center">
                             <h1 className="text-5xl font-bold mb-3">Register now!</h1>
                         </div>

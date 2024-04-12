@@ -20,11 +20,10 @@ const EstateDetails = () => {
             </Helmet>
         <div className="container mx-auto">
             <Navbar></Navbar>
-            <div className="mt-16 gap-10">
-                <div className=" mx-3 lg:mx-0 relative mb-12
-                ">
-                    <div className={`absolute left-3 top-3 ${status === 'rent' ? 'bg-[#389b2f]' : 'bg-[#FF5A3D]'} px-2 mx-3py-1 text-white uppercase`}>For {status}</div>
-                    <img className="w-full h-[700px] object-cover flex-1 rounded-lg" src={image} alt="" />
+            <div className="mt-8 gap-10">
+                <div className=" mx-3 lg:mx-0 relative mb-12">
+                    <div className={`absolute left-3 top-3 ${status === 'rent' ? 'bg-[#389b2f]' : 'bg-[#FF5A3D]'} px-2 mx-2 py-1 text-white uppercase`}>For {status}</div>
+                    <img className="w-full h-[600px] object-cover flex-1 rounded-lg" src={image} alt="" />
                 </div>
                 <div className="flex lg:flex-row flex-col justify-between gap-3 lg:gap-32 mx-3">
                     <div className="flex-1">

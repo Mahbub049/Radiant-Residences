@@ -34,7 +34,7 @@ const BlogCard = () => {
                             <FaUserLarge className="text-xl text-[#FF5A3D]"></FaUserLarge>
                             <p className="">{author}</p>
                         </div>
-                        <div className='flex gap-2 items-center mb-4 lg:mb-0 lg:my-4 text-orange-600'>
+                        <div className='flex gap-2 items-center mb-4 lg:my-4 text-orange-600'>
                             <BsCalendarDate className="text-xl"></BsCalendarDate>
                             <h2 className="text-[#FF5A3D]">{date}</h2>
                         </div>

@@ -2,11 +2,16 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { useLoaderData } from 'react-router-dom';
 import BlogDetails from "./BlogDetails/BlogDetails";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Blog = () => {
     const blogs = useLoaderData();
     return (
-        <div className="container mx-auto">
+        <HelmetProvider>
+            <Helmet>
+                <title>Blog || Radiant Residences</title>
+            </Helmet>
+            <div className="container mx-auto">
             <Navbar></Navbar>
             <div>
                 <div className="bg-[#ff5a3d20] py-20 text-center my-6 rounded-xl mx-3 lg:mx-0">
@@ -14,12 +19,13 @@ const Blog = () => {
                 </div>
                 <div className="mx-3 lg:mx-0">
                     {
-                        blogs.map(blog=><BlogDetails blog={blog}></BlogDetails>)
+                        blogs.map(blog=><BlogDetails key={blog.id} blog={blog}></BlogDetails>)
                     }
                 </div>
             </div>
             <Footer></Footer>
         </div>
+        </HelmetProvider>
     );
 };
 
