@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const BlogDetails = ({blog}) => {
     const {id, title, author, date, content, tags, image} = blog;
     return (
-        <div className="border border-[#FF5A3D] p-8 rounded-xl flex items-center gap-8 mt-6">
+        <div className="border border-[#FF5A3D] p-8 rounded-xl flex lg:flex-row flex-col items-center gap-8 mt-6">
             <div>
                 <img src={image} className="w-[600px] h-[300px] object-cover" alt="" />
             </div>

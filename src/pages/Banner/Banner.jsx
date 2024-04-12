@@ -3,14 +3,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import './Banner.css';
+import './Banner.css';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Banner = () => {
     return (
-        <div className='mt-6 lg:mt-12 mx-1'>
+        <div className='banner'>
+            <div className='mt-8 mx-1'>
             <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -60,6 +61,7 @@ const Banner = () => {
             </div>
             </SwiperSlide>
       </Swiper>
+            </div>
         </div>
     );
 };

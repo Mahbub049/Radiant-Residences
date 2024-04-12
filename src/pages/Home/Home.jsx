@@ -12,8 +12,10 @@ const Home = () => {
             </Helmet>
             <div className="container mx-auto">
             <Navbar></Navbar>
-            <Banner></Banner>
-            <Estates></Estates>
+            <div>
+                <Banner></Banner>
+                <Estates></Estates>
+            </div>
             <Footer></Footer>
             </div>
         </HelmetProvider>

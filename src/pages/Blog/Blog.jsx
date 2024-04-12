@@ -9,10 +9,10 @@ const Blog = () => {
         <div className="container mx-auto">
             <Navbar></Navbar>
             <div>
-                <div className="bg-[#ff5a3d20] py-20 text-center my-6 rounded-xl">
+                <div className="bg-[#ff5a3d20] py-20 text-center my-6 rounded-xl mx-3 lg:mx-0">
                     <p className="text-4xl  font-bold">Blog</p>
                 </div>
-                <div>
+                <div className="mx-3 lg:mx-0">
                     {
                         blogs.map(blog=><BlogDetails blog={blog}></BlogDetails>)
                     }

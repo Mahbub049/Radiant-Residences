@@ -23,18 +23,18 @@ const BlogCard = () => {
             </Helmet>
         <div className="container mx-auto">
             <Navbar></Navbar>
-            <div className="mt-16 flex items-center gap-10">
+            <div className="mt-16 flex flex-col lg:flex-row items-center gap-10 mx-3 lg:mx-0">
                 <div className="flex-1 relative">
                     <img className="w-full object-cover h-[550px] flex-1 rounded-lg" src={image} alt="" />
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 mx-auto lg:mx-0">
                     <h2 className="text-4xl font-bold ">{title}</h2>
-                    <div className='flex gap-6'>
+                    <div className='flex flex-col lg:flex-row lg:gap-6'>
                         <div className=" flex gap-2 items-center my-4 text-orange-600 rounded-lg">
                             <FaUserLarge className="text-xl text-[#FF5A3D]"></FaUserLarge>
                             <p className="">{author}</p>
                         </div>
-                        <div className='flex gap-2 items-center my-4 text-orange-600'>
+                        <div className='flex gap-2 items-center mb-4 lg:mb-0 lg:my-4 text-orange-600'>
                             <BsCalendarDate className="text-xl"></BsCalendarDate>
                             <h2 className="text-[#FF5A3D]">{date}</h2>
                         </div>
@@ -44,7 +44,7 @@ const BlogCard = () => {
                         <p>{category}</p>
                     </div>
                     <hr className="my-6" />
-                    <p className="text-gray-500"><span className="font-semibold text-black">Description: </span>{content}</p>
+                    <p className="text-gray-500 "><span className="font-semibold text-black">Description: </span>{content}</p>
                     <div className='flex gap-6 my-5 '>
                         <div className='flex gap-2 items-center text-[#FF5A3D] font-semibold'>
                             <IoLocationSharp></IoLocationSharp>
@@ -56,7 +56,7 @@ const BlogCard = () => {
                         </div>
                     </div>
                     <h4 className="mt-6 mb-4 font-semibold">Tags:</h4>
-                    <div className="flex gap-6 font-semibold">
+                    <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 font-semibold">
                     {
                         tags.map((facility, idx)=><p key={idx} className="text-white bg-[#FF5A3D] p-2 rounded-lg">{facility}</p>)
                     }

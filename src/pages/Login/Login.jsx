@@ -49,7 +49,7 @@ const Login = () => {
             <Navbar></Navbar>
             <div>
                 <div className="hero bg-base-200 mt-16">
-                    <div className="hero-content flex-col w-[800px] h-[600px]">
+                    <div className="hero-content flex-col lg:w-[800px] h-[600px]">
                         <div className="text-center">
                             <h1 className="text-5xl font-bold mb-3">Login now!</h1>
                         </div>
@@ -76,8 +76,8 @@ const Login = () => {
                                     <button className="btn bg-[#FF5A3D] text-lg text-white">Login</button>
                                 </div>
                             </form>
-                           <div className='flex gap-4 mx-auto'>
-                                <div className='mx-8 mb-8 flex justify-center'>
+                           <div className='flex flex-col lg:flex-row lg:gap-4 mx-auto'>
+                                <div className='mx-8 lg:mb-8 mb-4 flex justify-center'>
                                     <button onClick={googleUserLogin} className="btn text-lg">
                                         <FcGoogle></FcGoogle>
                                         Login with Google

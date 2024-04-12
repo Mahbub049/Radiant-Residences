@@ -19,11 +19,11 @@ const Contact = () => {
             <Navbar></Navbar>
             <div className="mt-16">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold">Contact Us</h2>
-                    <p className="px-96 leading-7 mt-6">We align leaders around a shared purpose and strategic story that catalyzes their business and brand to take action.</p>
+                    <h2 className="text-2xl lg:text-5xl font-bold">Contact Us</h2>
+                    <p className="px-4 lg:px-96 leading-7 mt-6">We align leaders around a shared purpose and strategic story that catalyzes their business and brand to take action.</p>
                 </div>
-                <div className="flex gap-4">
-                    <div className="flex-1 grid grid-cols-2 gap-2">
+                <div className="flex flex-col lg:flex-row gap-4">
+                    <div className="flex-1 grid-cols-1 grid lg:grid-cols-2 gap-2 mx-3 lg:mx-0">
                         <div className="text-center bg-[#FF5A3D] text-white p-8 py-16 rounded-2xl" >
                             <FaLocationDot className="flex justify-center w-full text-6xl mb-4"></FaLocationDot>
                             <h3 className="text-3xl font-bold mb-3">Address:</h3>
@@ -49,8 +49,8 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                <div className="">
-                    <MapContainer className="w-[800px]" style={{height: "600px" }} center={position} zoom={13} scrollWheelZoom={false}>
+                <div className="mx-3">
+                    <MapContainer className="w-full lg:w-[800px]" style={{height: "600px" }} center={position} zoom={13} scrollWheelZoom={false}>
                         <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
