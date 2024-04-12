@@ -50,14 +50,14 @@ const Contact = () => {
                         </div>
                     </div>
                 <div className="mx-3">
-                    <MapContainer className="w-full lg:w-[800px]" style={{height: "600px" }} center={position} zoom={13} scrollWheelZoom={false}>
+                    <MapContainer className="w-full lg:w-[800px] h-[600px]" center={position} zoom={13} scrollWheelZoom={false}>
                         <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         <Marker position={position}>
                         <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
+                            Radiant Residences
                         </Popup>
                         </Marker>
                     </MapContainer>
