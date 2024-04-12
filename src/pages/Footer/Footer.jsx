@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className="pt-32 mb-10">
-                    <footer className="footer px-10 text-base-content lg:mt-20 mb-10 flex flex-col lg:flex-row justify-between text-[16px]">
+                    <footer className="footer px-10 text-base-content lg:mt-20 mb-10 flex flex-col md:flex-row md:flex-wrap lg:flex-row justify-between text-[16px]">
                         <nav>
                             <h6 className="footer-title text-lg text-[#FF5A3D]">Company</h6> 
                             <a className="link link-hover">About</a>

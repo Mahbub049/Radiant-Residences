@@ -23,22 +23,22 @@ const Navbar = () => {
         <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 mt-6">
+        <div className="navbar bg-base-100 mt-6 ">
             <div className="navbar-start">
                 <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                <div tabIndex={0} role="button" className="btn btn-ghost md:hidden lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 lg:z-[1] p-2 shadow bg-base-100 rounded-box w-52 z-10">
                     {lists}
                 </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost lg:text-3xl font-bold text-[#FF5A3D] pl-0">
+                <Link to={'/'} className="btn btn-ghost  lg:text-3xl font-bold text-[#FF5A3D] pl-0 md: pl-4 lg:pl-4">
                     <TbBuildingEstate className="hidden lg:flex"></TbBuildingEstate>
                     Radiant Residences
                 </Link>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center hidden md:flex lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {lists}
                 </ul>
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <Link to={'/login'} className="btn text-white ml-4 bg-[#FF5A3D]">Log In</Link>
                 </div>}
             </div>
-            </div>
+        </div>
     );
 };
 

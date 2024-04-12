@@ -23,7 +23,7 @@ const Contact = () => {
                     <p className="px-4 lg:px-96 leading-7 mt-6">We align leaders around a shared purpose and strategic story that catalyzes their business and brand to take action.</p>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-4">
-                    <div className="flex-1 grid-cols-1 grid lg:grid-cols-2 gap-2 mx-3 lg:mx-0">
+                    <div className="flex-1 grid-cols-1 grid md:grid-cols-2 lg:grid-cols-2 gap-2 mx-3 lg:mx-0">
                         <div className="text-center bg-[#FF5A3D] text-white p-8 py-16 rounded-2xl" >
                             <FaLocationDot className="flex justify-center w-full text-6xl mb-4"></FaLocationDot>
                             <h3 className="text-3xl font-bold mb-3">Address:</h3>

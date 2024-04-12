@@ -41,7 +41,7 @@ const UpdateProfile = () => {
                 <Navbar></Navbar>
                 <div>
                     <div className="hero mt-16 ">
-                        <div className="hero-content flex-col w-[340px] lg:w-[800px] h-[600px]">
+                        <div className="hero-content flex-col md:w-full w-[340px] lg:w-[800px] h-[600px]">
                             <div className="text-center">
                                 <h1 className="text-5xl font-bold mb-6">Update Your Profile</h1>
                             </div>
