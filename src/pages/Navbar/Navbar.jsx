@@ -33,7 +33,7 @@ const Navbar = () => {
                     {lists}
                 </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost text-3xl font-bold text-[#FF5A3D]">
+                <Link to={'/'} className="btn btn-ghost lg:text-3xl font-bold text-[#FF5A3D]">
                     <TbBuildingEstate></TbBuildingEstate>
                     Radiant Residences
                 </Link>

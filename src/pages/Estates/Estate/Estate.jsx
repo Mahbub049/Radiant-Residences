@@ -18,8 +18,8 @@ const Estate = ({estate}) => {
                 <h2 className="text-xl font-bold">{estate_title}</h2>
                 {description.length>100 ? <p>{description.slice(0,100)}...</p> : <p>{description}</p>}
                 <hr className="mt-4" />
-                <div className="flex gap-7">
-                    <div className="flex gap-2 items-center my-3">
+                <div className="flex flex-col lg:flex-row gap-7">
+                    <div className="flex gap-2 items-center lg:my-3">
                         <FiSquare className="text-lg" />
                         <p>{area}</p>
                     </div>
