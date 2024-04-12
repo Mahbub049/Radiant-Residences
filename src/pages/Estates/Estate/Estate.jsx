@@ -34,7 +34,7 @@ const Estate = ({estate}) => {
                 </div>
                 <hr />
                 <div className="card-actions justify-end my-6">
-                    <Link to={`estate/${id}`} className="btn bg-[#FF5A3D] text-white w-full">View Details</Link>
+                    <Link to={`estate/${id}`} className="btn bg-[#FF5A3D] text-white w-full">View Property</Link>
                 </div>
             </div>
         </div>
