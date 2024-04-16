@@ -49,7 +49,9 @@ const Navbar = () => {
                         <div className="tooltip" data-tip={user.displayName}>
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
+                                <Link to={'/profile'}>
                                     <img referrerpolicy="no-referrer" alt="User" src={user.photoURL? user.photoURL : <FaRegUserCircle />} />
+                                </Link>
                                 </div>
                             </div>
                         </div>

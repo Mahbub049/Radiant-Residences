@@ -12,6 +12,7 @@ import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 import Contact from "../pages/Contact/Contact";
 import Blog from "../pages/Blog/Blog";
 import BlogCard from "../pages/Blog/BlogDetails/BlogCard/BlogCard";
+import Profile from "../pages/Profile/Profile";
  
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
           path: '/blogdetails/:id',
           element: <PrivateRoute><BlogCard></BlogCard></PrivateRoute>,
           loader: ()=> fetch('/blogs.json')
+        },
+        {
+          path: '/profile',
+          element: <PrivateRoute><Profile></Profile></PrivateRoute>
         }
     ]
   },
