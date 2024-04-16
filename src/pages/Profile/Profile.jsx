@@ -17,9 +17,9 @@ const Profile = () => {
                         <Navbar></Navbar>
                         <div className="p-10 flex flex-col items-center mt-16">
                             <h2 className="text-4xl font-bold mb-12 underline text-[#FF5A3D]">User Information</h2>
-                            <img className="rounded-full w-72 mb-4" src={photoURL} alt="" />
-                            <h2 className="text-3xl font-bold mb-2">{displayName}</h2>
-                            <h4 className="text-xl font-semibold mb-6">{email}</h4>
+                            <img className="rounded-full w-36 md:w-40 lg:w-48 mb-4" src={photoURL} alt="" />
+                            <h2 className="text-2xl text-center md:text-3xl lg:text-3xl font-bold mb-2">{displayName}</h2>
+                            <h4 className="text-lg md:text-xl lg:text-xl font-semibold mb-6">{email}</h4>
                             <Link className="btn text-white lg:ml-4 bg-[#FF5A3D]" to={'/profileUpdate'}>Update Profile</Link>
                         </div>
                         <Footer></Footer>
