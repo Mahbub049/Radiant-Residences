@@ -1,24 +1,38 @@
 # Radiant Residences
 
-Welcome to Radiant Residences, your premier destination for finding luxurious and comfortable accommodations for your next getaway!
-
-Live Site URL: [Radiant Residences](https://radiant-residences.web.app)
-
-## Features and Characteristics:
-1. **Luxurious Accommodation Listings**: Explore a curated selection of high-end residences, including penthouses, beachfront properties, resorts, private islands, villas, and mansions.
-2. **Responsive Design**: Enjoy a seamless browsing experience across all devices, ensuring accessibility and convenience for users on mobile phones, tablets, and desktops.
-3. **Interactive Maps with React Leaflet**: Discover the perfect location for your next retreat using our interactive maps powered by React Leaflet.
-4. **Effortless Registration and Login**: Easily create an account or log in using Google, GitHub authentication, ensuring a hassle-free user experience.
-5. **Engaging Blog Section**: Dive into insightful articles and travel inspiration in our blog section, with the ability to view post details and engage with fellow travelers.
-
-## NPM Packages Used:
-- **React-Leaflet**: Utilized for interactive maps displaying accommodation locations.
-- **React Hook Form**: Implemented for efficient form handling on registration and login pages.
-- **Swiper Slider**: Employed to create visually appealing sliders for showcasing luxurious residence listings.
-
-## About Radiant Residences:
 Radiant Residences sets the standard for luxury accommodation, offering discerning travelers a curated selection of exquisite properties for their next escape. With a commitment to excellence and attention to detail, Radiant Residences ensures an unforgettable stay in the world's most sought-after destinations.
 
----
+## Live Site
 
-We value your feedback! Please don't hesitate to reach out with any questions or suggestions for improving the Radiant Residences experience.
+Visit [Radiant Residences](radiant-residences.web.app/) to view the Residences near you!
+
+## Key Features
+
+1. **Luxurious Accommodation Listings**: Explore a curated selection of high-end residences, including penthouses, beachfront properties, resorts, private islands, villas, and mansions.
+2. **Interactive Maps with React Leaflet**: Discover the perfect location for your next retreat using our interactive maps powered by React Leaflet.
+3. **Engaging Blog Section**: Dive into insightful articles and travel inspiration in our blog section, with the ability to view post details and engage with fellow travelers.
+
+## Technology Stack
+- **Frontend:** React.js, HTML5, TailwindCSS
+
+## Cloning and Running the Project Locally
+- **Step 1:** Clone the repository.
+  ```bash
+  git clone https://github.com/Mahbub049/Radiant-Residences.git
+  ```
+- **Step 2:** Navigate to the project directory
+  ```bash
+  cd Radiant-Residences
+  ```
+- **Step 3:** Install dependencies.
+  ```bash
+  npm install
+  ```
+- **Step 4:** Create a .env file and add your Firebase config credentials.
+
+- **Step 5:**  Start the development server.
+  ```bash
+  npm start
+  ```
+
+- **Step 6:** Open your browser and go to http://localhost:5000.
